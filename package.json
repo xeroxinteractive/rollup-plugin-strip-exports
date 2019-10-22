@@ -1,9 +1,9 @@
 {
-  "name": "@xerox/npm-typescript",
+  "name": "@xerox/rollup-plugin-strip-exports",
   "version": "0.0.0",
-  "description": "A repository template for creating npm modules with TypeScript in the @xeroxinteractive org.",
+  "description": "Remove unwanted exports from your code.",
   "main": "build/index.js",
-  "repository": "git@github.com:xeroxinteractive/npm-typescript.git",
+  "repository": "git@github.com:xeroxinteractive/rollup-plugin-strip-exports.git",
   "author": "Andrew Leedham <Andrew.Leedham@xerox.com>",
   "license": "MIT",
   "scripts": {
@@ -29,13 +29,8 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@xerox/commitlint-config"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
-    }
   },
   "prettier": "@xerox/prettier-config",
   "eslintConfig": {
@@ -48,7 +43,11 @@
     "extends": "@xerox/semantic-release-config/npm"
   },
   "jest": {
-    "testRunner": "jest-circus/runner"
+    "testRunner": "jest-circus/runner",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/__specs__/"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -56,21 +55,37 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
     "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
+    "@types/astring": "^1.3.0",
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.2",
+    "@xerox/commitlint-config": "^1.0.1",
     "@xerox/eslint-config": "^1.9.1",
     "@xerox/prettier-config": "^1.1.0",
     "@xerox/semantic-release-config": "^1.4.0",
     "babel-jest": "^24.9.0",
     "eslint": "5.16.0",
     "eslint-config-xerox": "^1.4.3",
+    "globby": "^10.0.1",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "jest-circus": "^24.9.0",
     "prettier": "^1.16.4",
+    "rollup": "^1.25.1",
     "semantic-release": "^15.13.27",
     "semantic-release-config-xerox": "^1.1.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "astring": "^1.4.3",
+    "estree-walker": "^0.8.1",
+    "magic-string": "^0.25.4",
+    "rollup-pluginutils": "^2.8.2"
+  },
+  "resolutions": {
+    "estree-walker": ">=0.8.1",
+    "set-value": ">=2.0.1",
+    "mem": ">=4.0.0",
+    "https-proxy-agent": ">=2.2.3",
+    "handlebars": ">=4.3.0"
   }
 }
