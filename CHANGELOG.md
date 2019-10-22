@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/xeroxinteractive/rollup-plugin-strip-exports/compare/v1.0.0...v1.0.1) (2019-10-22)
+
+
+### Bug Fixes
+
+* add publishConfig ([922d406](https://github.com/xeroxinteractive/rollup-plugin-strip-exports/commit/922d406))
+
 # 1.0.0 (2019-10-22)
 
 
