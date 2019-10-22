@@ -51,11 +51,11 @@ workflows:
   install_lint_deploy:
     jobs:
       - install_lint_test
-      # - deploy:
-      #     context: npm
-      #     requires:
-      #       - install_lint_test
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
+      - deploy:
+          context: npm
+          requires:
+            - install_lint_test
+          filters:
+            branches:
+              only:
+                - master

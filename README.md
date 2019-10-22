@@ -1,6 +1,6 @@
-# npm-typescript
+# rollup-plugin-strip-exports
 
-> A repository template for creating npm modules with TypeScript in the @xeroxinteractive org.
+> Remove unwanted exports from your code.
 
 [![circleci status][circleci-badge]][circleci-link]
 [![npm package][npm-badge]][npm-link]
@@ -9,21 +9,83 @@
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![Dependabot Status][dependabot-badge]][dependabot-link]
 
+rollup-plugin-strip-exports is intended to remove unwanted exports from your entry file. It does not check if an export is imported by another file, the intention is to just strip exports from the entry file. The primary use-case for this is when using iife, as exports are added to the global scope and this is often not useful if you are bundling everything together, as you have no purpose for using those exports.
+
+## Installation
+```bash
+yarn add rollup-plugin-strip-exports --dev
+# or
+npm install rollup-plugin-strip-exports --save-dev
+```
+
+## Usage
+```javascript
+// rollup.config.js
+import stripExports from 'rollup-plugin-strip-exports';
+
+export default {
+  input: 'source/index.js',
+  output: {
+    file: 'build/index.js',
+    format: 'iife'
+  },
+  plugins: [
+    stripExports({ /* options */ })
+  ]
+};
+```
+
+## Functionality
+Function definitions or variable declerations or any other named value will be kept but the export stripped as code in the same file may use them.
+However if they are not used and you have tree-shaking turned on, then they will be removed anyway.
+```javascript
+// input.js
+export const variable = 6;
+
+export function add(a, b) {
+  return a + b;
+}
+
+console.log(add(variable, 4));
+// output.js
+const variable = 6;
+
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(variable, 4));
+```
+
+Exported default literals will be removed, as they serve no purpose without an export.
+```javascript
+// input.js
+export default 'literal';
+// output.js
+```
+
+## Options
+None of the following options are required.
+
+| name | description | type | default |
+| --- | --- | --- | --- |
+| sourceMap | Whether you are using sourceMaps or not. | `Boolean` | `true` |
+
 ---
 
 [LICENSE][license] | [CHANGELOG][changelog] | [ISSUES][issues]
 
 [license]: ./LICENSE
 [changelog]: ./CHANGELOG.md
-[issues]: https://github.com/xeroxinteractive/npm-typescript/issues
+[issues]: https://github.com/xeroxinteractive/rollup-plugin-strip-exports/issues
 
-[circleci-badge]: https://flat.badgen.net/circleci/github/xeroxinteractive/npm-typescript/master
-[circleci-link]: https://circleci.com/gh/xeroxinteractive/npm-typescript/tree/master
+[circleci-badge]: https://flat.badgen.net/circleci/github/xeroxinteractive/rollup-plugin-strip-exports/master
+[circleci-link]: https://circleci.com/gh/xeroxinteractive/rollup-plugin-strip-exports/tree/master
 
-[npm-badge]: https://flat.badgen.net/npm/v/@xerox/npm-typescript?color=cyan
-[npm-link]: https://www.npmjs.com/package/@xerox/npm-typescript
+[npm-badge]: https://flat.badgen.net/npm/v/@xerox/rollup-plugin-strip-exports?color=cyan
+[npm-link]: https://www.npmjs.com/package/@xerox/rollup-plugin-strip-exports
 
-[license-badge]: https://flat.badgen.net/npm/license/@xerox/npm-typescript
+[license-badge]: https://flat.badgen.net/npm/license/@xerox/rollup-plugin-strip-exports
 
 [commit-style-badge]: https://flat.badgen.net/badge/commit%20style/angular/purple
 [commit-style-link]: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines
@@ -31,5 +93,5 @@
 [semantic-release-badge]: https://flat.badgen.net/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80/semantic%20release/e10079
 [semantic-release-link]: https://github.com/semantic-release/semantic-release
 
-[dependabot-badge]: https://flat.badgen.net/dependabot/xeroxinteractive/npm-typescript?icon=dependabot
+[dependabot-badge]: https://flat.badgen.net/dependabot/xeroxinteractive/rollup-plugin-strip-exports?icon=dependabot
 [dependabot-link]: https://dependabot.com
