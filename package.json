@@ -42,6 +42,9 @@
   "release": {
     "extends": "@xerox/semantic-release-config/npm"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "testRunner": "jest-circus/runner",
     "testPathIgnorePatterns": [
