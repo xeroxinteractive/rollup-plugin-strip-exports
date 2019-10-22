@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:10.14.1
+    - image: circleci/node:12.9
   resource_class: small
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
           at: ~/repo
       - add_ssh_keys:
           fingerprints:
-            - 'xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx'
+            - '56:d4:05:3e:47:44:fc:99:07:b7:ee:a9:57:ed:c2:59'
       - run:
           name: Configure git
           command: |
