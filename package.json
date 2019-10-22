@@ -82,6 +82,10 @@
     "rollup-pluginutils": "^2.8.2"
   },
   "resolutions": {
-    "estree-walker": ">=0.8.1"
+    "estree-walker": ">=0.8.1",
+    "set-value": ">=2.0.1",
+    "mem": ">=4.0.0",
+    "https-proxy-agent": ">=2.2.3",
+    "handlebars": ">=4.3.0"
   }
 }
