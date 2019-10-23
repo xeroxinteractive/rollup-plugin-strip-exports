@@ -3,14 +3,7 @@ import { walk } from 'estree-walker';
 import MagicString from 'magic-string';
 import { generate } from 'astring';
 import { Node } from 'estree';
-
-export interface StripExportsOptions {
-  sourceMap?: boolean;
-}
-
-const defaultStripExportsOptions: StripExportsOptions = {
-  sourceMap: true,
-};
+import { StripExportsOptions, defaultStripExportsOptions } from './options';
 
 /**
  * Rollup plugin which strips export statements.
@@ -18,9 +11,7 @@ const defaultStripExportsOptions: StripExportsOptions = {
  * @param options - Strip exports options.
  * @returns Strip export plugin.
  */
-export default function stripExports(
-  options: StripExportsOptions = {}
-): Plugin {
+export = function stripExports(options: StripExportsOptions = {}): Plugin {
   options = {
     ...defaultStripExportsOptions,
     ...options,
@@ -78,4 +69,4 @@ export default function stripExports(
       return { code: magicString.toString(), map };
     },
   };
-}
+};
