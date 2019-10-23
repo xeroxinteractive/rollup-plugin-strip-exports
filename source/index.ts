@@ -3,14 +3,7 @@ import { walk } from 'estree-walker';
 import MagicString from 'magic-string';
 import { generate } from 'astring';
 import { Node } from 'estree';
-
-export interface StripExportsOptions {
-  sourceMap?: boolean;
-}
-
-const defaultStripExportsOptions: StripExportsOptions = {
-  sourceMap: true,
-};
+import { StripExportsOptions, defaultStripExportsOptions } from './options';
 
 /**
  * Rollup plugin which strips export statements.
@@ -18,9 +11,7 @@ const defaultStripExportsOptions: StripExportsOptions = {
  * @param options - Strip exports options.
  * @returns Strip export plugin.
  */
-export default function stripExports(
-  options: StripExportsOptions = {}
-): Plugin {
+export = function stripExports(options: StripExportsOptions = {}): Plugin {
   options = {
     ...defaultStripExportsOptions,
     ...options,
@@ -40,33 +31,35 @@ export default function stripExports(
 
       walk(ast, {
         enter(node?: Node): void {
-          const [start, end] = node.range;
-          if (options.sourceMap) {
-            magicString.addSourcemapLocation(start);
-            magicString.addSourcemapLocation(end);
-          }
-          switch (node.type) {
-            case 'ExportAllDeclaration':
-              magicString.remove(start, end);
-              removed = true;
-              this.skip();
-              break;
-            case 'ExportNamedDeclaration':
-            case 'ExportDefaultDeclaration':
-              if (
-                node.declaration &&
-                node.declaration.type !== 'Literal' &&
-                node.declaration.type !== 'Identifier'
-              ) {
-                magicString.overwrite(start, end, generate(node.declaration));
-                removed = true;
-                this.skip();
-              } else {
+          if (node && node.range) {
+            const [start, end] = node.range;
+            if (options.sourceMap) {
+              magicString.addSourcemapLocation(start);
+              magicString.addSourcemapLocation(end);
+            }
+            switch (node.type) {
+              case 'ExportAllDeclaration':
                 magicString.remove(start, end);
                 removed = true;
                 this.skip();
-              }
-              break;
+                break;
+              case 'ExportNamedDeclaration':
+              case 'ExportDefaultDeclaration':
+                if (
+                  node.declaration &&
+                  node.declaration.type !== 'Literal' &&
+                  node.declaration.type !== 'Identifier'
+                ) {
+                  magicString.overwrite(start, end, generate(node.declaration));
+                  removed = true;
+                  this.skip();
+                } else {
+                  magicString.remove(start, end);
+                  removed = true;
+                  this.skip();
+                }
+                break;
+            }
           }
         },
       });
@@ -78,4 +71,4 @@ export default function stripExports(
       return { code: magicString.toString(), map };
     },
   };
-}
+};
