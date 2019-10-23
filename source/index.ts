@@ -31,33 +31,35 @@ export = function stripExports(options: StripExportsOptions = {}): Plugin {
 
       walk(ast, {
         enter(node?: Node): void {
-          const [start, end] = node.range;
-          if (options.sourceMap) {
-            magicString.addSourcemapLocation(start);
-            magicString.addSourcemapLocation(end);
-          }
-          switch (node.type) {
-            case 'ExportAllDeclaration':
-              magicString.remove(start, end);
-              removed = true;
-              this.skip();
-              break;
-            case 'ExportNamedDeclaration':
-            case 'ExportDefaultDeclaration':
-              if (
-                node.declaration &&
-                node.declaration.type !== 'Literal' &&
-                node.declaration.type !== 'Identifier'
-              ) {
-                magicString.overwrite(start, end, generate(node.declaration));
-                removed = true;
-                this.skip();
-              } else {
+          if (node && node.range) {
+            const [start, end] = node.range;
+            if (options.sourceMap) {
+              magicString.addSourcemapLocation(start);
+              magicString.addSourcemapLocation(end);
+            }
+            switch (node.type) {
+              case 'ExportAllDeclaration':
                 magicString.remove(start, end);
                 removed = true;
                 this.skip();
-              }
-              break;
+                break;
+              case 'ExportNamedDeclaration':
+              case 'ExportDefaultDeclaration':
+                if (
+                  node.declaration &&
+                  node.declaration.type !== 'Literal' &&
+                  node.declaration.type !== 'Identifier'
+                ) {
+                  magicString.overwrite(start, end, generate(node.declaration));
+                  removed = true;
+                  this.skip();
+                } else {
+                  magicString.remove(start, end);
+                  removed = true;
+                  this.skip();
+                }
+                break;
+            }
           }
         },
       });
