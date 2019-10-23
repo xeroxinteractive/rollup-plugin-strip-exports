@@ -82,10 +82,10 @@ None of the following options are required.
 [circleci-badge]: https://flat.badgen.net/circleci/github/xeroxinteractive/rollup-plugin-strip-exports/master
 [circleci-link]: https://circleci.com/gh/xeroxinteractive/rollup-plugin-strip-exports/tree/master
 
-[npm-badge]: https://flat.badgen.net/npm/v/@xerox/rollup-plugin-strip-exports?color=cyan
-[npm-link]: https://www.npmjs.com/package/@xerox/rollup-plugin-strip-exports
+[npm-badge]: https://flat.badgen.net/npm/v/rollup-plugin-strip-exports?color=cyan
+[npm-link]: https://www.npmjs.com/package/rollup-plugin-strip-exports
 
-[license-badge]: https://flat.badgen.net/npm/license/@xerox/rollup-plugin-strip-exports
+[license-badge]: https://flat.badgen.net/npm/license/rollup-plugin-strip-exports
 
 [commit-style-badge]: https://flat.badgen.net/badge/commit%20style/angular/purple
 [commit-style-link]: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines
