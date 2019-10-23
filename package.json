@@ -1,5 +1,5 @@
 {
-  "name": "@xerox/rollup-plugin-strip-exports",
+  "name": "rollup-plugin-strip-exports",
   "version": "0.0.0",
   "description": "Remove unwanted exports from your code.",
   "main": "build/index.js",
