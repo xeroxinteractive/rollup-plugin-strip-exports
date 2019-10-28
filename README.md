@@ -11,6 +11,10 @@
 
 rollup-plugin-strip-exports is intended to remove unwanted exports from your entry file. It does not check if an export is imported by another file, the intention is to just strip exports from the entry file. The primary use-case for this is when using iife, as exports are added to the global scope and this is often not useful if you are bundling everything together, as you have no purpose for using those exports.
 
+As of rollup version [1.26.0](https://github.com/rollup/rollup/releases/tag/v1.26.0) not providing a name for iife bundles will no longer cause an error (just a warning) and will not pollute the global scope. However this plugin is still useful for a few reasons.
+1. The iife will still have the exports assign to a variable which it returns. This could cause confusion when a developer is reading the rollup output, so it is cleaner to just not export anything (in my opinion).
+2. You may want to remove exports for a different reason.
+
 ## Installation
 ```bash
 yarn add rollup-plugin-strip-exports --dev
