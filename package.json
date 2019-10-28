@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-strip-exports",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Remove unwanted exports from your code.",
   "main": "build/index.js",
   "repository": "git@github.com:xeroxinteractive/rollup-plugin-strip-exports.git",
