@@ -51,11 +51,10 @@
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.2",
     "@xerox/commitlint-config": "^1.0.1",
-    "@xerox/eslint-config": "^1.9.1",
+    "@xerox/eslint-config": "^1.10.1",
     "@xerox/prettier-config": "^1.1.0",
     "@xerox/semantic-release-config": "^1.4.0",
-    "eslint": "5.16.0",
-    "eslint-config-xerox": "^1.4.3",
+    "eslint": "^6.6.0",
     "globby": "^10.0.1",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
@@ -64,7 +63,7 @@
     "rollup": "^1.25.1",
     "semantic-release": "^15.13.27",
     "semantic-release-config-xerox": "^1.1.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "astring": "^1.4.3",
