@@ -2,6 +2,12 @@
   "name": "rollup-plugin-strip-exports",
   "version": "1.0.2",
   "description": "Remove unwanted exports from your code.",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "strip-exports",
+    "iife"
+  ],
   "main": "build/index.js",
   "repository": "git@github.com:xeroxinteractive/rollup-plugin-strip-exports.git",
   "author": "Andrew Leedham <Andrew.Leedham@xerox.com>",
