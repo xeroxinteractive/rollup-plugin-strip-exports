@@ -15,7 +15,6 @@ test.each(
     plugins: [stripExports()],
   });
   const { output } = await bundle.generate({ format: 'es' });
-  const { code } = output[0];
 
-  expect(code).toMatchSnapshot();
+  expect(output[0].code).toMatchSnapshot();
 });
