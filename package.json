@@ -57,10 +57,10 @@
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.2",
     "@xerox/commitlint-config": "^1.0.1",
-    "@xerox/eslint-config": "^1.10.1",
+    "@xerox/eslint-config": "^1.10.2",
     "@xerox/prettier-config": "^1.1.1",
     "@xerox/semantic-release-config": "^1.4.0",
-    "eslint": "^6.6.0",
+    "eslint": "^5.16.0",
     "globby": "^10.0.1",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
@@ -69,20 +69,20 @@
     "rollup": "^1.25.1",
     "semantic-release": "^15.13.27",
     "semantic-release-config-xerox": "^1.1.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "ts-jest": "^24.1.0"
   },
   "dependencies": {
     "astring": "^1.4.3",
     "estree-walker": "^0.9.0",
     "magic-string": "^0.25.4",
-    "rollup-pluginutils": "^2.8.2",
-    "ts-jest": "^24.1.0"
+    "rollup-pluginutils": "^2.8.2"
   },
   "resolutions": {
     "estree-walker": ">=0.8.1",
     "set-value": ">=2.0.1",
     "mem": ">=4.0.0",
     "https-proxy-agent": ">=2.2.3",
-    "handlebars": ">=4.3.0"
+    "handlebars": ">=4.5.2"
   }
 }
