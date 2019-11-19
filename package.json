@@ -57,7 +57,7 @@
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.2",
     "@xerox/commitlint-config": "^2.0.0",
-    "@xerox/eslint-config": "^1.10.2",
+    "@xerox/eslint-config": "^2.0.1",
     "@xerox/prettier-config": "^1.1.1",
     "@xerox/semantic-release-config": "^2.0.0",
     "eslint": "^5.16.0",
