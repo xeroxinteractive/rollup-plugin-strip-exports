@@ -42,6 +42,6 @@ test('sourceMap false', async () => {
   const { output } = await bundle.generate({ format: 'es', sourcemap: true });
   expect(output[0].map?.mappings).toBe(';;;;;;;;');
   expect(mockWarn).toHaveBeenCalledWith(
-    "Sourcemap is likely to be incorrect: a plugin ('strip-exports') was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help"
+    "Sourcemap is likely to be incorrect: a plugin (strip-exports) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help"
   );
 });
