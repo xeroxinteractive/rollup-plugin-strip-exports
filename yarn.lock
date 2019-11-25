@@ -2518,10 +2518,10 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
-estree-walker@>=0.8.1, estree-walker@^0.6.1, estree-walker@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.9.0.tgz#9116372f09c02fd88fcafb0c04343631012a0aa6"
-  integrity sha512-12U47o7XHUX329+x3FzNVjCx3SHEzMF0nkDv7r/HnBzX/xNTKxajBk6gyygaxrAFtLj39219oMfbtxv4KpaOiA==
+estree-walker@>=0.8.1, estree-walker@^0.6.1, estree-walker@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-1.0.0.tgz#ebae31c73abf797c17efaf6856e0f05cff45e262"
+  integrity sha512-vY6xMN2j47HfQfVWGRqHshr1olf+XS1Y488NoqjDP1c8E1TcoZr/D3eSGa6akBs76WL1X9nluWjgBsCKdt/qKg==
 
 esutils@^2.0.2:
   version "2.0.2"
