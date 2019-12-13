@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-strip-exports",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Remove unwanted exports from your code.",
   "keywords": [
     "rollup",
