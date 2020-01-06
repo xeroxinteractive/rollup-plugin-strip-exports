@@ -3,7 +3,7 @@
 exports[`sourceMap true 1`] = `
 SourceMap {
   "file": "default-named.js",
-  "mappings": "AAAA,sBAA6B;AAC7B,gBAAuB;AACvB,oBAA2B;AAC3B,wBAA+B;AAC/B,iCAAwC;;AAExC;;CAEE",
+  "mappings": "AAAA,sBAA6B;AAC7B,gBAAuB;AACvB,oBAA2B;AAC3B,wBAA+B;AAC/B,iCAAwC;AACxC;AACA;;",
   "names": Array [],
   "sources": Array [
     "source/__tests__/__specs__/default-named.js",
