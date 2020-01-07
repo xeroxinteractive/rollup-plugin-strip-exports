@@ -2662,9 +2662,9 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
 estree-walker@>=0.8.1, estree-walker@^0.6.1, estree-walker@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-1.0.0.tgz#ebae31c73abf797c17efaf6856e0f05cff45e262"
-  integrity sha512-vY6xMN2j47HfQfVWGRqHshr1olf+XS1Y488NoqjDP1c8E1TcoZr/D3eSGa6akBs76WL1X9nluWjgBsCKdt/qKg==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-1.0.1.tgz#31bc5d612c96b704106b477e6dd5d8aa138cb700"
+  integrity sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
 
 esutils@^2.0.2:
   version "2.0.2"
