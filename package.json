@@ -62,7 +62,7 @@
     "@xerox/prettier-config": "^2.0.0",
     "@xerox/semantic-release-config": "^2.0.0",
     "eslint": "^5.16.0",
-    "globby": "^10.0.1",
+    "globby": "^11.0.0",
     "husky": "^4.0.0",
     "jest": "^24.9.0",
     "jest-circus": "^24.9.0",
