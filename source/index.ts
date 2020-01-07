@@ -2,7 +2,7 @@ import { Plugin, TransformResult, PluginContext } from 'rollup';
 import { walk } from 'estree-walker';
 import MagicString from 'magic-string';
 import { generate } from 'astring';
-import { Node } from 'estree';
+import { BaseExpression, Node } from 'estree';
 import { StripExportsOptions, defaultStripExportsOptions } from './options';
 
 /**
@@ -30,7 +30,8 @@ export = function stripExports(options: StripExportsOptions = {}): Plugin {
       let removed = false;
 
       walk(ast, {
-        enter(node?: Node): void {
+        enter(baseNode?: BaseExpression): void {
+          const node = baseNode as Node;
           if (node && node.range) {
             const [start, end] = node.range;
             if (options.sourceMap) {
