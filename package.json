@@ -22,6 +22,9 @@
     "deploy": "semantic-release",
     "prepublishOnly": "yarn run build"
   },
+  "engines": {
+    "node": ">=10 <=12"
+  },
   "browserslist": [
     "current node"
   ],
