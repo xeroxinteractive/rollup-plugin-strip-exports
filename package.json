@@ -65,7 +65,7 @@
     "globby": "^11.0.0",
     "husky": "^4.0.0",
     "jest": "^25.1.0",
-    "jest-circus": "^24.9.0",
+    "jest-circus": "^25.1.0",
     "prettier": "^1.19.1",
     "rollup": "^1.25.1",
     "semantic-release": "^15.13.27",
