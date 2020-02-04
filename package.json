@@ -78,7 +78,7 @@
   },
   "dependencies": {
     "astring": "^1.4.3",
-    "estree-walker": "^1.0.0",
+    "estree-walker": "^2.0.1",
     "magic-string": "^0.25.4",
     "rollup-pluginutils": "^2.8.2"
   },
