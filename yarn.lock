@@ -913,10 +913,10 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/estree@*", "@types/estree@^0.0.43":
-  version "0.0.43"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.43.tgz#b73abf9f5db97540cd69815fd65c5b1198526c4e"
-  integrity sha512-WfOySUnBpyKXbkC9QuZguwOGhGnugDXT2f2P6X8EIis7qlnd5NI1Nr4kRi357NtguxezyizIcaFlQe0wx23XnA==
+"@types/estree@*", "@types/estree@^0.0.44":
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.44.tgz#980cc5a29a3ef3bea6ff1f7d021047d7ea575e21"
+  integrity sha512-iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==
 
 "@types/events@*":
   version "3.0.0"
