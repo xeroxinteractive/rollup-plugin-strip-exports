@@ -800,14 +800,14 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@semantic-release/changelog@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-5.0.0.tgz#3db43fc15d78267c5b3f3f9dd311ddb2a0f8596b"
-  integrity sha512-A1uKqWtQG4WX9Vh4QI5b2ddhqx1qAJFlbow8szSNiXn+TaJg15LSUA9NVqyu0VxQFy3hKUJYwbBHGRXCxCy2fg==
+"@semantic-release/changelog@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-5.0.1.tgz#50a84b63e5d391b7debfe021421589fa2bcdafe4"
+  integrity sha512-unvqHo5jk4dvAf2nZ3aw4imrlwQ2I50eVVvq9D47Qc3R+keNqepx1vDYwkjF8guFXnOYaYcR28yrZWno1hFbiw==
   dependencies:
     "@semantic-release/error" "^2.1.0"
     aggregate-error "^3.0.0"
-    fs-extra "^8.0.0"
+    fs-extra "^9.0.0"
     lodash "^4.17.4"
 
 "@semantic-release/commit-analyzer@^8.0.0", "@semantic-release/commit-analyzer@^8.0.1":
@@ -1156,16 +1156,16 @@
   integrity sha512-sess42cMm+G4VMQqNoDImm8Ak4zeStmcWaQpwLs2hf3iUjN5wdMzvqyr49EXHPzNKxICCOSgZr8afU/E04jCnw==
 
 "@xerox/semantic-release-config@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@xerox/semantic-release-config/-/semantic-release-config-2.2.2.tgz#802e191a5cc0141fcaee10d64db00f38e347e93b"
-  integrity sha512-CA/EsXGzuVCj6toamKAgcDaSfBtyxtBrtgnPnU4O1r4QRTdSFnHdkrDzaYN6v8oCs1s40rIzxihM2yqsRYd7xA==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@xerox/semantic-release-config/-/semantic-release-config-2.2.3.tgz#c1e468a81d763324baa32dec95c3db06bc738143"
+  integrity sha512-qVa2nSSc83ae06qmg2q0YKS+RMefxUvm2UFOJBDT9686r6A1vFkTRsZ7W9j2yXnm3Ce2lhxJU77fghDL51SwtA==
   dependencies:
-    "@semantic-release/changelog" "^5.0.0"
+    "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/commit-analyzer" "^8.0.1"
     "@semantic-release/git" "^9.0.0"
     "@semantic-release/npm" "^7.0.5"
     "@semantic-release/release-notes-generator" "^9.0.1"
-    semantic-release-slack-bot "^1.5.0"
+    semantic-release-slack-bot "^1.6.2"
 
 JSONStream@^1.0.4, JSONStream@^1.3.4, JSONStream@^1.3.5:
   version "1.3.5"
@@ -3360,15 +3360,6 @@ from2@^2.1.0, from2@^2.3.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@^8.0.0:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
-  integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
 fs-extra@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.0.0.tgz#b6afc31036e247b2466dc99c29ae797d5d4580a3"
@@ -4906,13 +4897,6 @@ json5@^1.0.1:
   integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
   dependencies:
     minimist "^1.2.0"
-
-jsonfile@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
-  integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
-  optionalDependencies:
-    graceful-fs "^4.1.6"
 
 jsonfile@^6.0.1:
   version "6.0.1"
@@ -7348,10 +7332,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-semantic-release-slack-bot@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/semantic-release-slack-bot/-/semantic-release-slack-bot-1.5.0.tgz#4c13cbd42528e3e885295f18c1db50f850e597d2"
-  integrity sha512-a/7GugwaS+KwqZun7yqaMmDCQXywny1l2+q9t8geL9RGyHD6URPdcmGj5SfOnm4OgxqNLhuLWlqnqozcZ/fOxw==
+semantic-release-slack-bot@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/semantic-release-slack-bot/-/semantic-release-slack-bot-1.6.2.tgz#b07c9596d808c07eebedb9defc1fc0208ca76272"
+  integrity sha512-XVfignER7ZXGstfu0T2pyPIx1rsuSHEDRsScTcVmFNrAYBPCYEzBMmYdAd+Zq/UItmEcexcfi2h+7AIC8PeyWQ==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     node-fetch "^2.3.0"
@@ -8467,11 +8451,6 @@ universal-user-agent@^5.0.0:
   integrity sha512-B5TPtzZleXyPrUMKCpEHFmVhMN6EhmJYjG5PQna9s7mXeSqGTLap4OpqLl5FCEFUI3UBmllkETwKf/db66Y54Q==
   dependencies:
     os-name "^3.1.0"
-
-universalify@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
-  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 universalify@^1.0.0:
   version "1.0.0"
