@@ -826,10 +826,10 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@^7.0.0":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-7.0.6.tgz#4e2b30ba94afb6dad8e6fe9bd960d9be108f6992"
-  integrity sha512-70fUj+t98AWRgeOG0j2kdguvaVyysOZRUmXykZBwkktSDm1UZ6YfelYFPuM9OJbKPuNjKsCsRXl5/wukDUg8PA==
+"@semantic-release/github@^7.0.0", "@semantic-release/github@^7.0.7":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-7.0.7.tgz#e3999b06433d08871acd68ecec2b4e212c05d09f"
+  integrity sha512-Sai2UucYQ+5rJzKVEVJ4eiZNDdoo0/CzfpValBdeU5h97uJE7t4CoBTmUWkiXlPOx46CSw1+JhI+PHC1PUxVZw==
   dependencies:
     "@octokit/rest" "^17.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -1168,13 +1168,14 @@
   integrity sha512-sess42cMm+G4VMQqNoDImm8Ak4zeStmcWaQpwLs2hf3iUjN5wdMzvqyr49EXHPzNKxICCOSgZr8afU/E04jCnw==
 
 "@xerox/semantic-release-config@^2.2.2":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@xerox/semantic-release-config/-/semantic-release-config-2.2.3.tgz#c1e468a81d763324baa32dec95c3db06bc738143"
-  integrity sha512-qVa2nSSc83ae06qmg2q0YKS+RMefxUvm2UFOJBDT9686r6A1vFkTRsZ7W9j2yXnm3Ce2lhxJU77fghDL51SwtA==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@xerox/semantic-release-config/-/semantic-release-config-2.3.0.tgz#3cbc6ff93013db615bd4f8f376581fa01fb11c2f"
+  integrity sha512-WFHxb2c2rVOBb9S5YQginnH5+UVJg2f/ZRajn7WkDP/L6zhXREbna2c/iMEhe+ZZ+ThX44hbFG45Uord6b72JA==
   dependencies:
     "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/commit-analyzer" "^8.0.1"
     "@semantic-release/git" "^9.0.0"
+    "@semantic-release/github" "^7.0.7"
     "@semantic-release/npm" "^7.0.5"
     "@semantic-release/release-notes-generator" "^9.0.1"
     semantic-release-slack-bot "^1.6.2"
