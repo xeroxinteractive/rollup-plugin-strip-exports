@@ -2,7 +2,7 @@
 
 > Remove unwanted exports from your code.
 
-[![circleci status][circleci-badge]][circleci-link]
+[![ci status][ci-badge]][ci-link]
 [![npm package][npm-badge]][npm-link]
 [![license MIT][license-badge]][license]
 [![commit style angular][commit-style-badge]][commit-style-link]
@@ -83,8 +83,8 @@ None of the following options are required.
 [changelog]: ./CHANGELOG.md
 [issues]: https://github.com/xeroxinteractive/rollup-plugin-strip-exports/issues
 
-[circleci-badge]: https://flat.badgen.net/circleci/github/xeroxinteractive/rollup-plugin-strip-exports/master
-[circleci-link]: https://circleci.com/gh/xeroxinteractive/rollup-plugin-strip-exports/tree/master
+[ci-badge]: https://flat.badgen.net/github/checks/xeroxinteractive/rollup-plugin-strip-exports/release?label=ci
+[ci-link]: https://github.com/xeroxinteractive/rollup-plugin-strip-exports/actions?query=branch%3Arelease
 
 [npm-badge]: https://flat.badgen.net/npm/v/rollup-plugin-strip-exports?color=cyan
 [npm-link]: https://www.npmjs.com/package/rollup-plugin-strip-exports
