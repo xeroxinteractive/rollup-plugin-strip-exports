@@ -1,3 +1,5 @@
+## [2.0.6](https://github.com/xeroxinteractive/rollup-plugin-strip-exports/compare/v2.0.5...v2.0.6) (2020-07-31)
+
 ## [1.0.2](https://github.com/xeroxinteractive/rollup-plugin-strip-exports/compare/v1.0.1...v1.0.2) (2019-10-23)
 
 
