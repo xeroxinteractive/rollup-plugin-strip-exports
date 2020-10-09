@@ -19,7 +19,7 @@ export = function stripExports(options: StripExportsOptions = {}): Plugin {
   return {
     name: 'strip-exports',
     transform(this: PluginContext, code: string, id: string): TransformResult {
-      if (!this.getModuleInfo(id).isEntry) {
+      if (!this.getModuleInfo(id)?.isEntry) {
         return;
       }
 
