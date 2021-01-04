@@ -1763,9 +1763,9 @@ astral-regex@^1.0.0:
   integrity sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
 
 astring@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/astring/-/astring-1.4.3.tgz#b99d4b0349bc7b28934bb9f03f86ec34d69c3a09"
-  integrity sha512-yJlJU/bmN820vL+cbWShu2YQU87dBP5V7BH2N4wODapRv27A2dZtUD0LgjP9lZENvPe9XRoSyWx+pZR6qKqNBw==
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/astring/-/astring-1.5.1.tgz#506e639739bf2e5f23355e4fdbc17df499a1fe4f"
+  integrity sha512-7Zq8TwRBOy82ux3I9e0SvcJX5lDlyQnZRs8FHSn+cYS0tz79bwRQo3Jx0AuufoUTmliRtW1vjP+s7Zd0FPUXRA==
 
 asynckit@^0.4.0:
   version "0.4.0"
