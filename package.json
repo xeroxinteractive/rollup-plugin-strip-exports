@@ -66,7 +66,7 @@
     "@xerox/semantic-release-config": "^2.2.2",
     "eslint": "^7.3.1",
     "globby": "^11.0.0",
-    "husky": "^4.3.8",
+    "husky": "^5.1.0",
     "jest": "^26.0.1",
     "jest-circus": "^26.0.1",
     "jest-package-audit": "^3.1.2",
