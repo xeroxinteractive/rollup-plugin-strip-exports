@@ -1403,13 +1403,13 @@
     eslint-visitor-keys "^2.0.0"
 
 "@xerox/commitlint-config@^2.1.1":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@xerox/commitlint-config/-/commitlint-config-2.1.6.tgz#208a5651a0c1df8fcf5ca57165a02d3763035998"
-  integrity sha512-JomPw7Hylqxy9nemqe85D0l1rItF8RQJkEoSpFeDyh8zMIQnUyeVuzm2c9dNjX6i1fBsYDtYbQdtU3OyFAZEHg==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@xerox/commitlint-config/-/commitlint-config-2.2.0.tgz#79b297b7984200a974b1b50017eab415dd5311a7"
+  integrity sha512-CbCpCSU+I/qAGHFzJ05zepwxyOiPo35eTIMHGAAxt4FP2XYBur1B9h4rP7tGNZFurWknCwS4dwoXgd/Zki0a/w==
   dependencies:
     "@commitlint/cli" "^11.0.0"
     "@commitlint/config-conventional" "^11.0.0"
-    husky "^4.3.0"
+    husky "^5.0.9"
 
 "@xerox/eslint-config@^3.1.4":
   version "3.1.9"
@@ -4123,7 +4123,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.3.0, husky@^4.3.8:
+husky@^4.3.8:
   version "4.3.8"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
   integrity sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
@@ -4138,6 +4138,11 @@ husky@^4.3.0, husky@^4.3.8:
     please-upgrade-node "^3.2.0"
     slash "^3.0.0"
     which-pm-runs "^1.0.0"
+
+husky@^5.0.9:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.0.tgz#68b1148523acc838af0655ead71bf4671adb9f93"
+  integrity sha512-Os0EY2haOO+59YZSwMiUDsHY43RFwBVIRStHcnnT8/kvA+sFfaA/YS4uLFRiymXYgQl6E6TQTt3y4v/Z2ctEtw==
 
 iconv-lite@0.4.24, iconv-lite@~0.4.13:
   version "0.4.24"
